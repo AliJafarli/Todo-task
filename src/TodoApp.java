@@ -281,7 +281,7 @@ public class TodoApp {
                     writer.write(entry.getKey() + ";" + task.getId() + ";" + task.getName() + ";" + task.getDueDate() + ";" + task.getPriority() + ";" + task.getStatus() + "\n");
                 }
             }
-        } catch (IOException e) {
+        }  catch (IOException e) {
             e.printStackTrace();
         }
     }
