@@ -253,11 +253,11 @@ public class TodoApp {
             while (reader.ready()) {
                 String[] lineArr = reader.readLine().split(";");
 
-                Task task = new Task(lineArr[2],LocalDate.parse(lineArr[3]), lineArr[4]);
+                Task task = new Task(lineArr[2], LocalDate.parse(lineArr[3]), lineArr[4]);
 
                 task.setId(Integer.parseInt(lineArr[1]));
                 task.setStatus(lineArr[5]);
-                if(!tasks.containsKey(lineArr[0])){
+                if (!tasks.containsKey(lineArr[0])) {
                     tasks.put(lineArr[0], new ArrayList<>());
                 }
 
@@ -281,7 +281,7 @@ public class TodoApp {
                     writer.write(entry.getKey() + ";" + task.getId() + ";" + task.getName() + ";" + task.getDueDate() + ";" + task.getPriority() + ";" + task.getStatus() + "\n");
                 }
             }
-        }  catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
