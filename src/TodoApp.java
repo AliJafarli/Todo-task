@@ -14,7 +14,7 @@ public class TodoApp {
         loadTasks();
 
         while (true) {
-             System.out.println("\nWelcome to TODO App!");
+            System.out.println("\nWelcome to TODO App!");
             System.out.println("1. Create an Account");
             System.out.println("2. Login");
             System.out.println("3. Add TODO");
